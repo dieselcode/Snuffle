@@ -63,7 +63,8 @@ class EventLib
      * @param mixed  $args
      *
      * @return bool
-     */public function emit($event, $args)
+     */
+    public function emit($event, $args)
     {
         if (array_key_exists($event, $this->listeners)) {
             foreach ($this->listeners[$event] as $callback) {
@@ -83,7 +84,8 @@ class EventLib
      * @param mixed $event
      *
      * @return bool
-     */public function remove($event = null)
+     */
+    public function remove($event = null)
     {
         if (is_null($event)) {
             $this->listeners = [];
@@ -95,8 +97,6 @@ class EventLib
 
         return false;
     }
-
-
 
 }
 
