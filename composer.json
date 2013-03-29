@@ -1,0 +1,24 @@
+{
+    "name": "dieselcode/Snuffle",
+    "type": "library",
+    "description": "Snuffle Event Library for PHP",
+    "keywords": ["php","event"],
+    "homepage": "http://github.com/dieselcode/Snuffle",
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "Andrew Heebner",
+            "email": "andrew.heebner@gmail.com",
+            "homepage": "http://github.com/dieselcode",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.6"
+    },
+    "autoload": {
+        "psr-0": {
+            "Snuffle": "src"
+        }
+    }
+}
